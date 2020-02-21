@@ -44,37 +44,17 @@ function Barchart(file)
                 .attr("height", function(d) { return h - y(+d.Count); })
                 .attr("fill", "#e8491d")
                 .on("mouseover", function(d,i) {
-                    // on mouse-over make the bin wider and higher to focus on it
                     d3.select(this)
-                    // .transition().duration(500)
                     .style("fill","#000000");
 
                     tip.html( "<span style='color:black'>" + d.Count + "</span>");
                     tip.show();
-
-                    // on mouse-over display the value of the bin on top of the bin
-                    // d3.selectAll("text").each(function (d, currI) {
-                    //     if (currI === i) {
-                    //         d3.select(this).style("visibility", "visible");
-                    //     }
-                    // })
-
                 })
 
                 .on("mouseout", function(d,i) {
-                    // on mouse-out make the bin back to normal size
                     d3.select(this)
-                    // .transition().duration(500)
                     .style("fill","#e8491d");
-
                     tip.hide();
-
-                    // on mouse-out remove the value of the bin on top of the bin
-                    // d3.selectAll("text").each(function (d, currI) {
-                    //     if (currI === i) {
-                    //         d3.select(this).style("visibility", "hidden");
-                    //     }
-                    // })
                 })
     })
 }
