@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>CSE 564 | Project 1</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="changeBinCount.js"></script>
+    <script src="histogram.js"></script>
+    <script src="barchart.js"></script>
+    <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">CSE 564</span> Project 1</h1>
+        </div>
+        <nav>
+          <ul>
+            <!--li class="current"><a href="index.html">Attributes</a></li-->
+            <li><div class="dropdown">
+                <button class="dropbtn">ATTRIBUTES
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="index.html", onclick = "Categorical('A1 (Categorical)','A1.csv')">A1 (•)</a>
+                    <a href="index.html", onclick = "Continuous('A2 (Continuous)','A2.csv')">A2 (-)</a>
+                    <a href="index.html", onclick = "Continuous('A3 (Continuous)','A3.csv')">A3 (-)</a>
+                    <a href="index.html", onclick = "Categorical('A4 (Categorical)','A4.csv')">A4 (•)</a>
+                    <a href="index.html", onclick = "Categorical('A5 (Categorical)','A5.csv')">A5 (•)</a>
+                    <a href="index.html", onclick = "Categorical('A6 (Categorical)','A6.csv')">A6 (•)</a>
+                    <a href="index.html", onclick = "Continuous('A7 (Continuous)','A7.csv')">A7 (-)</a>
+                    <a href="index.html", onclick = "Categorical('A8 (Categorical)','A8.csv')">A8 (•)</a>
+                    <a href="index.html", onclick = "Categorical('A9 (Categorical)','A9.csv')">A9 (•)</a>
+                    <a href="index.html", onclick = "Continuous('A10 (Continuous)','A10.csv')">A10 (-)</a>
+                    <a href="index.html", onclick = "Categorical('A11 (Categorical)','A11.csv')">A11 (•)</a>
+                    <a href="index.html", onclick = "Categorical('A12 (Categorical)','A12.csv')">A12 (•)</a>
+                    <a href="index.html", onclick = "Continuous('A13 (Continuous)','A13.csv')">A13 (-)</a>
+                    <a href="index.html", onclick = "Continuous('A14 (Continuous)','A14.csv')">A14 (-)</a>
+                    <a href="index.html", onclick = "Categorical('A15 (Categorical)','A15.csv')">A15 (•)</a>
+                </div>
+            </div></li>
+            <li><a href="#">Youtube Link</a></li>
+            <li><a href="#">GitHub</a></li>
+            <li class="current"><a href="AboutData.html">About Dataset</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+    <section id="main">
+      <div class="container">
+        <article id="main-col">
+          <h2 class="page-title">Statlog (Australian Credit Approval) Data Set</h2>
+
+          <p>
+            Abstract: This file concerns credit card applications. This database exists elsewhere in the repository (Credit Screening Database) in a slightly different form<br><br>
+            Data Set Information:<br>
+
+            This file concerns credit card applications. All attribute names and values have been changed to meaningless symbols to protect confidentiality of the data.<br>
+
+            This dataset is interesting because there is a good mix of attributes -- continuous, nominal with small numbers of values, and nominal with larger numbers of values. There are also a few missing values.<br>
+            This dataset is from the UCI Machine Learning Repository. Original page can be found <a href="http://archive.ics.uci.edu/ml/datasets/statlog+(australian+credit+approval)" target="_blank">here</a>.
+          </p>
+          <p class="dark">
+
+              Attribute Information:<br><br>
+
+                There are 6 numerical and 8 categorical attributes. The labels have been changed for the convenience of the statistical algorithms. For example, attribute 4 originally had 3 labels p,g,gg and these have been changed to labels 1,2,3.<br><br>
+
+                A1: 0,1 CATEGORICAL (formerly: a,b)<br>
+                A2: continuous.<br>
+                A3: continuous.<br>
+                A4: 1,2,3 CATEGORICAL (formerly: p,g,gg)<br>
+                A5: 1, 2,3,4,5, 6,7,8,9,10,11,12,13,14 CATEGORICAL (formerly: ff,d,i,k,j,aa,m,c,w, e, q, r,cc, x)<br>
+                A6: 1, 2,3, 4,5,6,7,8,9 CATEGORICAL (formerly: ff,dd,j,bb,v,n,o,h,z)<br>
+                A7: continuous.<br>
+                A8: 1, 0 CATEGORICAL (formerly: t, f)<br>
+                A9: 1, 0 CATEGORICAL (formerly: t, f)<br>
+                A10: continuous.<br>
+                A11: 1, 0 CATEGORICAL (formerly t, f)<br>
+                A12: 1, 2, 3 CATEGORICAL (formerly: s, g, p)<br>
+                A13: continuous.<br>
+                A14: continuous.<br>
+                A15: 1,2 class attribute (formerly: +,-)<br>
+
+          </p>
+        </article>
+
+
+      </div>
+    </section>
+
+
+
+
+    <footer>
+      <p>Thank You!</p>
+    </footer>
+  </body>
+</html>

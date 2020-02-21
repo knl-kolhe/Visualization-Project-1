@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>CSE 564 | Project 1</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="histogram.js"></script>
+    <script src="barchart.js"></script>
+    <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">CSE 564</span> Project 1</h1>
+        </div>
+        <nav>
+          <ul>
+            <!--li class="current"><a href="index.html">Attributes</a></li-->
+            <li class="current"><div class="dropdown">
+                <button class="dropbtn">ATTRIBUTES
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#", onclick = "Categorical('A1 (Categorical)','data/A1.csv')">A1 (•)</a>
+                    <a href="#", onclick = "Continuous('A2 (Continuous)','data/A2.csv')">A2 (-)</a>
+                    <a href="#", onclick = "Continuous('A3 (Continuous)','data/A3.csv')">A3 (-)</a>
+                    <a href="#", onclick = "Categorical('A4 (Categorical)','data/A4.csv')">A4 (•)</a>
+                    <a href="#", onclick = "Categorical('A5 (Categorical)','data/A5.csv')">A5 (•)</a>
+                    <a href="#", onclick = "Categorical('A6 (Categorical)','data/A6.csv')">A6 (•)</a>
+                    <a href="#", onclick = "Continuous('A7 (Continuous)','data/A7.csv')">A7 (-)</a>
+                    <a href="#", onclick = "Categorical('A8 (Categorical)','data/A8.csv')">A8 (•)</a>
+                    <a href="#", onclick = "Categorical('A9 (Categorical)','data/A9.csv')">A9 (•)</a>
+                    <a href="#", onclick = "Continuous('A10 (Continuous)','data/A10.csv')">A10 (-)</a>
+                    <a href="#", onclick = "Categorical('A11 (Categorical)','data/A11.csv')">A11 (•)</a>
+                    <a href="#", onclick = "Categorical('A12 (Categorical)','data/A12.csv')">A12 (•)</a>
+                    <a href="#", onclick = "Continuous('A13 (Continuous)','data/A13.csv')">A13 (-)</a>
+                    <a href="#", onclick = "Continuous('A14 (Continuous)','data/A14.csv')">A14 (-)</a>
+                    <a href="#", onclick = "Categorical('A15 (Categorical)','data/A15.csv')">A15 (•)</a>
+                </div>
+            </div></li>
+            <li><a href="#">Youtube Link</a></li>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="AboutData.html">About Dataset</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+    <div id="Attribute">
+        <p align="center">(• Categorical and - Continuous)</p>
+        <span id="variable">Select a variable</span>
+    </div>
+
+    <div id="svgElement">
+        <div id="graph">
+        </div>
+    </div>
+    <p id="nBins"></p>
+    <!--div class="slidercontainer">
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+    </div-->
+
+
+
+
+    <footer>
+      <p>Thank You!</p>
+    </footer>
+  </body>
+</html>
