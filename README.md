@@ -9,4 +9,5 @@ Dataset link: http://archive.ics.uci.edu/ml/datasets/statlog+(australian+credit+
 
 css starter template: https://www.youtube.com/watch?v=Wm6CUkswsNw&t=3s
 
+You can find the project hoted at: https://www.kunalkolhe.com/VisProject1/VisProject1.html
 
